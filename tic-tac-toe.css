@@ -1,3 +1,33 @@
 h1 {
   text-align: center;
 }
+
+hr {
+  height: 4px;
+  background-color: lightgray;
+}
+
+table {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 200px;
+  margin: auto
+}
+
+tbody td {
+  text-align: center;
+}
+
+.cell {
+  width: 200px;
+  height: 200px;
+}
+
+.row {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.column {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}

@@ -5,4 +5,8 @@ See if I can build my own tic-tac-toe gave with vanilla javaScript
 Files setup but blank
 
 # Version 1:
-Build the table
+- Build the table
+- Done
+
+# Version 2:
+- ID which box is clicked
