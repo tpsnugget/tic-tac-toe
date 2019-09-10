@@ -16,8 +16,10 @@ el.addEventListener("click", function(e) {
     letter = "X"
   }
 
-  game.addPlay( square, letter )
-  game.showPlay()
+  if ( i < 10 ) {
+    game.addPlay( square, letter )
+    game.showPlay()
+  }
 })
 
 // console.log(i)

@@ -18,3 +18,5 @@ Files setup but blank
 
 # Version 4:
 - Limit play to 9 plays
+- Done, but that does not bar changing an X to an O if the number of plays is
+  - less than 10
