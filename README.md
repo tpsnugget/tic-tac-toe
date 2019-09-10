@@ -11,3 +11,10 @@ Files setup but blank
 # Version 2:
 - ID which box is clicked
 - Done
+
+# Version 3:
+- Place the proper char into the proper box
+- Done
+
+# Version 4:
+- Limit play to 9 plays
