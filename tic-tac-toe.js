@@ -43,6 +43,95 @@ var game = {
       this.history[squareNum].square = square
       i++
     }
+
+    if ( i > 4 ) {
+      if (      this.history[1].letter === "X" &&
+                this.history[2].letter === "X" &&
+                this.history[3].letter === "X"    ) {
+                console.log("W is the winner!")
+      }
+      else if ( this.history[1].letter === "O" &&
+                this.history[2].letter === "O" &&
+                this.history[3].letter === "O"    ) {
+                  console.log("O is the winner!")
+      }
+      else if ( this.history[4].letter === "X" &&
+                this.history[5].letter === "X" &&
+                this.history[6].letter === "X"    ) {
+                  console.log("W is the winner!")
+      }
+      else if ( this.history[4].letter === "O" &&
+                this.history[5].letter === "O" &&
+                this.history[6].letter === "O"    ) {
+                  console.log("O is the winner!")
+      }
+      else if ( this.history[7].letter === "X" &&
+                this.history[8].letter === "X" &&
+                this.history[9].letter === "X"    ) {
+                  console.log("W is the winner!")
+      }
+      else if ( this.history[7].letter === "O" &&
+                this.history[8].letter === "O" &&
+                this.history[9].letter === "O"    ) {
+                  console.log("O is the winner!")
+      }
+      else if ( this.history[1].letter === "X" &&
+                this.history[4].letter === "X" &&
+                this.history[7].letter === "X"    ) {
+                  console.log("W is the winner!")
+      }
+      else if ( this.history[1].letter === "O" &&
+                this.history[4].letter === "O" &&
+                this.history[7].letter === "O"    ) {
+                  console.log("O is the winner!")
+      }
+      else if ( this.history[2].letter === "X" &&
+                this.history[5].letter === "X" &&
+                this.history[8].letter === "X"    ) {
+                  console.log("W is the winner!")
+      }
+      else if ( this.history[2].letter === "O" &&
+                this.history[5].letter === "O" &&
+                this.history[8].letter === "O"    ) {
+                  console.log("O is the winner!")
+      }
+      else if ( this.history[3].letter === "X" &&
+                this.history[6].letter === "X" &&
+                this.history[9].letter === "X"    ) {
+                  console.log("W is the winner!")
+      }
+      else if ( this.history[3].letter === "O" &&
+                this.history[6].letter === "O" &&
+                this.history[9].letter === "O"    ) {
+                  console.log("O is the winner!")
+      }
+      else if ( this.history[1].letter === "X" &&
+                this.history[5].letter === "X" &&
+                this.history[9].letter === "X"    ) {
+                  console.log("W is the winner!")
+      }
+      else if ( this.history[1].letter === "O" &&
+                this.history[5].letter === "O" &&
+                this.history[9].letter === "O"    ) {
+                  console.log("O is the winner!")
+      }
+      else if ( this.history[3].letter === "X" &&
+                this.history[5].letter === "X" &&
+                this.history[7].letter === "X"    ) {
+                  console.log("W is the winner!")
+      }
+      else if ( this.history[3].letter === "O" &&
+                this.history[5].letter === "O" &&
+                this.history[7].letter === "O"    ) {
+                  console.log("O is the winner!")
+      }
+      else {
+        if ( i === 10 ) {
+          console.log("Sorry, no winner!")
+        }
+      }
+    }
+
     return i
   },
   showPlay: function( square ) {
