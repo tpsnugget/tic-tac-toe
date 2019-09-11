@@ -36,3 +36,17 @@ Files setup but blank
 # Version 7
 - Check for a winner and console.log() it
 - Done.
+
+# Version 8
+- Output result to the DOM
+- Done.
+
+# Version 9
+- Add a reset button that shows up when a result is achieved
+
+# Version 10
+- Have the reset button actually work
+
+# Version 11
+- Have the result and reset button removed from the DOM once the reset button
+-   is clicked.

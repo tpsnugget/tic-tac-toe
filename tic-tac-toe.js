@@ -48,86 +48,86 @@ var game = {
       if (      this.history[1].letter === "X" &&
                 this.history[2].letter === "X" &&
                 this.history[3].letter === "X"    ) {
-                console.log("W is the winner!")
+                this.displayResult("X")
       }
       else if ( this.history[1].letter === "O" &&
                 this.history[2].letter === "O" &&
                 this.history[3].letter === "O"    ) {
-                  console.log("O is the winner!")
+                  this.displayResult("O")
       }
       else if ( this.history[4].letter === "X" &&
                 this.history[5].letter === "X" &&
                 this.history[6].letter === "X"    ) {
-                  console.log("W is the winner!")
+                  this.displayResult("X")
       }
       else if ( this.history[4].letter === "O" &&
                 this.history[5].letter === "O" &&
                 this.history[6].letter === "O"    ) {
-                  console.log("O is the winner!")
+                  this.displayResult("O")
       }
       else if ( this.history[7].letter === "X" &&
                 this.history[8].letter === "X" &&
                 this.history[9].letter === "X"    ) {
-                  console.log("W is the winner!")
+                  this.displayResult("X")
       }
       else if ( this.history[7].letter === "O" &&
                 this.history[8].letter === "O" &&
                 this.history[9].letter === "O"    ) {
-                  console.log("O is the winner!")
+                  this.displayResult("O")
       }
       else if ( this.history[1].letter === "X" &&
                 this.history[4].letter === "X" &&
                 this.history[7].letter === "X"    ) {
-                  console.log("W is the winner!")
+                  this.displayResult("X")
       }
       else if ( this.history[1].letter === "O" &&
                 this.history[4].letter === "O" &&
                 this.history[7].letter === "O"    ) {
-                  console.log("O is the winner!")
+                  this.displayResult("O")
       }
       else if ( this.history[2].letter === "X" &&
                 this.history[5].letter === "X" &&
                 this.history[8].letter === "X"    ) {
-                  console.log("W is the winner!")
+                  this.displayResult("X")
       }
       else if ( this.history[2].letter === "O" &&
                 this.history[5].letter === "O" &&
                 this.history[8].letter === "O"    ) {
-                  console.log("O is the winner!")
+                  this.displayResult("O")
       }
       else if ( this.history[3].letter === "X" &&
                 this.history[6].letter === "X" &&
                 this.history[9].letter === "X"    ) {
-                  console.log("W is the winner!")
+                  this.displayResult("X")
       }
       else if ( this.history[3].letter === "O" &&
                 this.history[6].letter === "O" &&
                 this.history[9].letter === "O"    ) {
-                  console.log("O is the winner!")
+                  this.displayResult("O")
       }
       else if ( this.history[1].letter === "X" &&
                 this.history[5].letter === "X" &&
                 this.history[9].letter === "X"    ) {
-                  console.log("W is the winner!")
+                  this.displayResult("X")
       }
       else if ( this.history[1].letter === "O" &&
                 this.history[5].letter === "O" &&
                 this.history[9].letter === "O"    ) {
-                  console.log("O is the winner!")
+                  this.displayResult("O")
       }
       else if ( this.history[3].letter === "X" &&
                 this.history[5].letter === "X" &&
                 this.history[7].letter === "X"    ) {
-                  console.log("W is the winner!")
+                  this.displayResult("X")
       }
       else if ( this.history[3].letter === "O" &&
                 this.history[5].letter === "O" &&
                 this.history[7].letter === "O"    ) {
-                  console.log("O is the winner!")
+                  this.displayResult("O")
       }
       else {
         if ( i === 10 ) {
-          console.log("Sorry, no winner!")
+          this.displayResult( "Sorry, no winner!" )
         }
       }
     }
@@ -139,6 +139,14 @@ var game = {
 
     var mark = document.getElementById(this.history[squareNum].square)
     mark.textContent = this.history[squareNum].letter
+  },
+  displayResult: function(string) {
+
+    if ( string.length === 1 ) {
+      string = "The winner is " + string
+    }
+
+    document.getElementById("myH2").textContent = string
   }
 }
 
