@@ -1,6 +1,6 @@
 
 var el = document.getElementById("myTable")
-var i = 0
+var i = 1
 var letter = "Y"
 
 el.addEventListener("click", function(e) {
@@ -8,7 +8,7 @@ el.addEventListener("click", function(e) {
   // console.log("Square number:" + Number(e.target.id) + "was selected.")
   var square = e.target.id
 
-  i++
+  // i++
 
   if ( i % 2 === 0 ) {
     letter = "O"
@@ -17,13 +17,9 @@ el.addEventListener("click", function(e) {
     letter = "X"
   }
 
-  game.addPlay( square, letter )
+  i = game.addPlay( square, letter, i )
   game.showPlay( square )
 })
-
-// console.log(i)
-// var mark = document.getElementById("1")
-// mark.textContent = "X"
 
 var game = {
   init: function() {
@@ -45,7 +41,9 @@ var game = {
     if ( this.history[squareNum].letter === "a" ) {
       this.history[squareNum].letter = letter
       this.history[squareNum].square = square
+      i++
     }
+    return i
   },
   showPlay: function( square ) {
     squareNum = Number( square )
