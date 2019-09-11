@@ -28,3 +28,7 @@ Files setup but blank
 -   Cells are only updated once per click, but clicking on a cell a second time
 -   still increments i which can cause an O to be displayed instead of an X the
 -   next time a blank cell is clicked
+
+# Version 6
+- Update i only when a cell is updated
+- Done. And it seemed pretty easy. Does not seem to have caused any issues.
