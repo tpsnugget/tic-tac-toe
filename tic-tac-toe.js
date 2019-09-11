@@ -4,18 +4,11 @@ var i = 1
 var letter = "Y"
 
 el.addEventListener("click", function(e) {
-  // console.log(Number(e.target.id) * 2)
-  // console.log("Square number:" + Number(e.target.id) + "was selected.")
+
   var square = e.target.id
 
-  // i++
-
-  if ( i % 2 === 0 ) {
-    letter = "O"
-  }
-  else {
-    letter = "X"
-  }
+  if ( i % 2 === 0 ) { letter = "O" }
+  else               { letter = "X" }
 
   i = game.addPlay( square, letter, i )
   game.showPlay( square )
@@ -60,7 +53,7 @@ var game = {
       if (      this.history[1].letter === "X" &&
                 this.history[2].letter === "X" &&
                 this.history[3].letter === "X"    ) {
-                this.displayResult("X")
+                  this.displayResult("X")
       }
       else if ( this.history[1].letter === "O" &&
                 this.history[2].letter === "O" &&
@@ -143,7 +136,6 @@ var game = {
         }
       }
     }
-
     return i
   },
   showPlay: function( square ) {
