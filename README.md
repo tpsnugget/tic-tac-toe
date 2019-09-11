@@ -43,6 +43,7 @@ Files setup but blank
 
 # Version 9
 - Add a reset button that shows up when a result is achieved
+- Done.
 
 # Version 10
 - Have the reset button actually work

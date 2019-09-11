@@ -147,6 +147,7 @@ var game = {
     }
 
     document.getElementById("myH2").textContent = string
+    document.getElementById("hiddenDiv").id = "visibleDiv"
   }
 }
 
