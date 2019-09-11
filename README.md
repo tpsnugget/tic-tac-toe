@@ -32,3 +32,7 @@ Files setup but blank
 # Version 6
 - Update i only when a cell is updated
 - Done. And it seemed pretty easy. Does not seem to have caused any issues.
+
+# Version 7
+- Check for a winner and console.log() it
+- Done.
