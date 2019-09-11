@@ -1,3 +1,4 @@
+
 var el = document.getElementById("myTable")
 var i = 0
 var letter = "Y"
@@ -16,10 +17,8 @@ el.addEventListener("click", function(e) {
     letter = "X"
   }
 
-  if ( i < 10 ) {
-    game.addPlay( square, letter )
-    game.showPlay()
-  }
+  game.addPlay( square, letter )
+  game.showPlay( square )
 })
 
 // console.log(i)
@@ -29,18 +28,31 @@ el.addEventListener("click", function(e) {
 var game = {
   init: function() {
     this.history = []
+
+    for ( var j = 0; j < 10; j++ ) {
+      this.initArray( "0", "a" )
+    }
   },
-  addPlay: function( square, letter ) {
+  initArray: function( square, letter ) {
     this.history.push({
       letter: letter,
       square: square
-    })
+    } )
   },
-  showPlay: function() {
-    var mark = document.getElementById(this.history[i - 1].square)
-    mark.textContent = this.history[i - 1].letter
+  addPlay: function( square, letter ) {
+    squareNum = Number(square)
+
+    if ( this.history[squareNum].letter === "a" ) {
+      this.history[squareNum].letter = letter
+      this.history[squareNum].square = square
+    }
+  },
+  showPlay: function( square ) {
+    squareNum = Number( square )
+
+    var mark = document.getElementById(this.history[squareNum].square)
+    mark.textContent = this.history[squareNum].letter
   }
 }
 
 game.init()
-
