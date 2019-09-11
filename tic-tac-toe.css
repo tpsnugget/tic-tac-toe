@@ -10,7 +10,17 @@ hr {
 table {
   font-family: 'Courier New', Courier, monospace;
   font-size: 150px;
-  margin: auto
+  margin: auto;
+}
+
+#hiddenDiv {
+  margin: auto;
+  visibility: hidden;
+}
+
+#visibleDiv {
+  margin: auto;
+  visibility: visible;
 }
 
 tbody td {
