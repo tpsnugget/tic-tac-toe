@@ -23,6 +23,15 @@ table {
   visibility: visible;
 }
 
+button {
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: lightgreen;
+  font-weight: bold;
+  color: white;
+}
+
 tbody td {
   text-align: center;
 }

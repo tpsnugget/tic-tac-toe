@@ -47,7 +47,9 @@ Files setup but blank
 
 # Version 10
 - Have the reset button actually work
+- Done.
 
 # Version 11
 - Have the result and reset button removed from the DOM once the reset button
 -   is clicked.
+- Done.

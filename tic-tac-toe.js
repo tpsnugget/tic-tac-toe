@@ -21,6 +21,18 @@ el.addEventListener("click", function(e) {
   game.showPlay( square )
 })
 
+var myButton = document.getElementById("myButton")
+myButton.addEventListener("click", function() {
+  i = 1
+
+  for ( var j = 1; j < 10; j++ ) {
+    document.getElementById(j).textContent = ""
+  }
+
+  game.init()
+  document.getElementById("visibleDiv").id = "hiddenDiv"
+})
+
 var game = {
   init: function() {
     this.history = []
